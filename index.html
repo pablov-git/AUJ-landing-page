@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajes Pablo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img src="logo.png" alt="logo" />
+      </a>
+      <nav>
+        <button class="hamburger">&#9776;</button>
+        <!-- icono hamburguesa -->
+        <ul class="nav-links">
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- Intro -->
+<section class="intro">
+  <h1>Explora el mundo con Viajes Pablo</h1>
+  <p>
+    Descubre destinos increíbles, aprovecha ofertas exclusivas y vive experiencias
+    inolvidables alrededor del mundo. ¡Tu próxima aventura empieza aquí!
+  </p>
+  <button id="openModal">Suscríbete a nuestras ofertas</button>
+</section>
+
+    <!-- Cards -->
+    <section class="cards">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1534964542054-81ea785bde49?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Lorem"
+        />
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+          alt="Ipsum"
+        />
+        <h3>Ipsum Dolor</h3>
+        <p>
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Dolor"
+        />
+        <h3>Dolor Sit</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>✉ correo@gmail.com | ☎ +00 0000 000 000</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Lorem Ipsum</h2>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur:
+        </p>
+        <form>
+          <input type="email" placeholder="Correo" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
