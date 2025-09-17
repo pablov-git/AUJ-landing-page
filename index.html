@@ -9,61 +9,90 @@
   <body>
     <!-- Header -->
     <header>
-      <a href="index.html">
+      <a href="#inicio">
         <img src="logo.png" alt="logo" />
       </a>
       <nav>
         <button class="hamburger">&#9776;</button>
-        <!-- icono hamburguesa -->
         <ul class="nav-links">
-          <li><a href="#">Destinos</a></li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
-<!-- Intro -->
-<section class="intro">
-  <h1>Explora el mundo con Viajes Pablo</h1>
-  <p>
-    Descubre destinos increíbles, aprovecha ofertas exclusivas y vive experiencias
-    inolvidables alrededor del mundo. ¡Tu próxima aventura empieza aquí!
-  </p>
-  <button id="openModal">Suscríbete a nuestras ofertas</button>
-</section>
+    <!-- Intro -->
+    <section class="intro" id="inicio">
+      <h1>Explora el mundo con Viajes Pablo</h1>
+      <p>
+        Descubre destinos increíbles, aprovecha ofertas exclusivas y vive
+        experiencias inolvidables alrededor del mundo. ¡Tu próxima aventura
+        empieza aquí!
+      </p>
+      <button id="openModal">Suscríbete a nuestras ofertas</button>
+    </section>
 
-    <!-- Cards -->
-    <section class="cards">
+    <!-- Destinos -->
+    <section class="cards" id="destinos">
+      <h2>Destinos destacados</h2>
       <div class="card">
         <img
-          src="https://images.unsplash.com/photo-1534964542054-81ea785bde49?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Lorem"
+          src="https://images.unsplash.com/photo-1534964542054-81ea785bde49?q=80&w=1740&auto=format&fit=crop"
+          alt="París"
         />
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>París, Francia</h3>
+        <p>
+          Disfruta de la Ciudad de la Luz, sus cafés encantadores y la emblemática Torre Eiffel.
+        </p>
       </div>
       <div class="card">
         <img
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
-          alt="Ipsum"
+          alt="Maldivas"
         />
-        <h3>Ipsum Dolor</h3>
+        <h3>Maldivas</h3>
         <p>
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Vive la experiencia de playas paradisíacas, aguas cristalinas y alojamientos de ensueño.
         </p>
       </div>
       <div class="card">
         <img
-          src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Dolor"
+          src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1742&auto=format&fit=crop"
+          alt="Tokio"
         />
-        <h3>Dolor Sit</h3>
+        <h3>Tokio, Japón</h3>
         <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+          Una ciudad donde tradición y modernidad se encuentran: templos, cultura milenaria y tecnología avanzada.
         </p>
       </div>
+    </section>
+
+    <!-- Quiénes somos -->
+    <section class="about" id="quienes-somos">
+      <h2>Quiénes somos</h2>
+      <p>
+        En <strong>Viajes Pablo</strong> llevamos más de 10 años organizando
+        experiencias únicas para nuestros clientes. Nos apasiona diseñar viajes
+        a medida, con atención personalizada y las mejores ofertas del mercado.
+        Nuestro objetivo es que disfrutes al máximo tu aventura, sin preocuparte
+        por nada.
+      </p>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        ¿Tienes dudas o quieres planear tu próximo viaje? Escríbenos, estaremos
+        encantados de ayudarte.
+      </p>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <!-- Footer -->
@@ -75,13 +104,13 @@
     <div class="modal" id="modal">
       <div class="modal-content">
         <span class="close" id="closeModal">&times;</span>
-        <h2>Lorem Ipsum</h2>
+        <h2>Suscríbete a nuestras ofertas</h2>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur:
+          Recibe las mejores promociones y descuentos exclusivos directamente en
+          tu correo:
         </p>
         <form>
-          <input type="email" placeholder="Correo" required />
+          <input type="email" placeholder="Correo electrónico" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
