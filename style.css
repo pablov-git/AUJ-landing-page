@@ -211,6 +211,7 @@ nav a:hover {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
+  font-family: inherit;
 }
 
 .contact button {
@@ -321,12 +322,7 @@ footer {
   .cards {
     grid-template-columns: 1fr;
   }
-
-  .card img {
-    height: auto;
-    max-height: 300px;
-  }
-
+  
   .cards h2 {
     grid-column: span 1;
   }
@@ -338,7 +334,10 @@ footer {
   }
 
   .card img {
-    height: 300px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
   }
 
   .cards h2 {
