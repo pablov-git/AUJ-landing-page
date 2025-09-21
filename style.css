@@ -43,10 +43,12 @@ nav ul {
 }
 
 nav a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.5rem 1.2rem;
   transition: color 0.3s;
 }
 
@@ -105,8 +107,8 @@ nav a:hover {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 3rem 2rem;
+  gap: 3rem;
+  padding: 3rem 4rem;
   background: #ffffff;
   border-bottom: 6px solid #044560;
 }
@@ -308,7 +310,7 @@ footer {
     position: absolute;
     top: 80px;
     right: 0;
-    width: 160px;
+    width: auto;
     padding: 1rem;
     border-left: 3px solid #044560;
     border-bottom: 3px solid #044560;
@@ -321,6 +323,8 @@ footer {
 
   .cards {
     grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem; 
   }
   
   .cards h2 {
