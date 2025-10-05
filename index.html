@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viajes Pablo</title>
+    <title>Atlas Travel</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,7 +13,9 @@
         <img src="logo.png" alt="logo" />
       </a>
       <nav>
-        <button class="hamburger">&#9776;</button>
+        <button class="hamburger" aria-label="Abrir menú de navegación">
+          &#9776;
+        </button>
         <ul class="nav-links">
           <li><a href="#destinos">Destinos</a></li>
           <li><a href="#quienes-somos">Quiénes somos</a></li>
@@ -22,93 +24,99 @@
       </nav>
     </header>
 
-    <!-- Intro -->
-    <section class="intro" id="inicio">
-      <h1>Explora el mundo con Viajes Pablo</h1>
-      <p>
-        Descubre destinos increíbles, aprovecha ofertas exclusivas y vive
-        experiencias inolvidables alrededor del mundo. ¡Tu próxima aventura
-        empieza aquí!
-      </p>
-      <button id="openModal">Suscríbete a nuestras ofertas</button>
-    </section>
-
-    <!-- Destinos -->
-    <section class="cards" id="destinos">
-      <h2>Destinos destacados</h2>
-      <div class="card">
-        <img
-          src="https://images.unsplash.com/photo-1534964542054-81ea785bde49?q=80&w=1740&auto=format&fit=crop"
-          alt="París"
-        />
-        <h3>París</h3>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Intro -->
+      <section class="intro" id="inicio">
+        <h1>Explora el mundo con Atlas Travel</h1>
         <p>
-          Disfruta de la Ciudad de la Luz, sus cafés encantadores y la
-          emblemática Torre Eiffel.
+          Descubre destinos increíbles, aprovecha ofertas exclusivas y vive
+          experiencias inolvidables alrededor del mundo. ¡Tu próxima aventura
+          empieza aquí!
         </p>
-      </div>
-      <div class="card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
-          alt="Maldivas"
-        />
-        <h3>Maldivas</h3>
-        <p>
-          Vive la experiencia de playas paradisíacas, aguas cristalinas y
-          alojamientos de ensueño.
-        </p>
-      </div>
-      <div class="card">
-        <img
-          src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1742&auto=format&fit=crop"
-          alt="Tokio"
-        />
-        <h3>Tokio</h3>
-        <p>
-          Una ciudad donde tradición y modernidad se encuentran: templos,
-          cultura milenaria y tecnología avanzada.
-        </p>
-      </div>
-    </section>
+        <button id="openModal">Suscríbete a nuestras ofertas</button>
+      </section>
 
-    <!-- Quiénes somos -->
-    <section class="about" id="quienes-somos">
-      <h2>Quiénes somos</h2>
-      <p>
-        En <strong>Viajes Pablo</strong> llevamos más de 10 años organizando
-        experiencias únicas para nuestros clientes. Nos apasiona diseñar viajes
-        a medida, con atención personalizada y las mejores ofertas del mercado.
-        Nuestro objetivo es que disfrutes al máximo tu aventura, sin preocuparte
-        por nada.
-      </p>
-    </section>
+      <!-- Destinos -->
+      <section class="cards" id="destinos">
+        <h2>Destinos destacados</h2>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1534964542054-81ea785bde49?q=80&w=1740&auto=format&fit=crop"
+            alt="París"
+          />
+          <h3>París</h3>
+          <p>
+            Disfruta de la Ciudad de la Luz, sus cafés encantadores y la
+            emblemática Torre Eiffel.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+            alt="Maldivas"
+          />
+          <h3>Maldivas</h3>
+          <p>
+            Vive la experiencia de playas paradisíacas, aguas cristalinas y
+            alojamientos de ensueño.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1742&auto=format&fit=crop"
+            alt="Tokio"
+          />
+          <h3>Tokio</h3>
+          <p>
+            Una ciudad donde tradición y modernidad se encuentran: templos,
+            cultura milenaria y tecnología avanzada.
+          </p>
+        </div>
+      </section>
 
-    <!-- Contacto -->
-    <section class="contact" id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        ¿Tienes dudas o quieres planear tu próximo viaje? Escríbenos, estaremos
-        encantados de ayudarte.
-      </p>
-      <form>
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+      <!-- Quiénes somos -->
+      <section class="about" id="quienes-somos">
+        <h2>Quiénes somos</h2>
+        <p>
+          En <strong>Atlas Travel</strong> llevamos más de 10 años organizando
+          experiencias únicas para nuestros clientes. Nos apasiona diseñar
+          viajes a medida, con atención personalizada y las mejores ofertas del
+          mercado. Nuestro objetivo es que disfrutes al máximo tu aventura, sin
+          preocuparte por nada.
+        </p>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          ¿Tienes dudas o quieres planear tu próximo viaje? Escríbenos,
+          estaremos encantados de ayudarte.
+        </p>
+        <form>
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Correo electrónico" required />
+          <textarea placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <span class="footer-item">✉ correo@gmail.com</span>
-      <span class="footer-separator">|</span>
-      <span class="footer-item">☎ +00 0000 000 000</span>
+      <address>
+        <a href="mailto:correo@gmail.com">✉ correo@gmail.com</a> |
+        <a href="tel:+00000000000">☎ +00 0000 000 000</a>
+      </address>
     </footer>
 
     <!-- Modal -->
-    <div class="modal" id="modal">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
       <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
+        <button class="close" id="closeModal" aria-label="Cerrar ventana">
+          &times;
+        </button>
         <h2>Suscríbete a nuestras ofertas</h2>
         <p>
           Recibe las mejores promociones y descuentos exclusivos directamente en
